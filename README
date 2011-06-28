@@ -1,0 +1,40 @@
+Dojo Toolkit svn->git Tool
+
+Overview:
+
+This utility will migrate commits from Dojo's official Subversion repo
+to your own git repo.  It will combine Dojo's separate trunks for dojo,
+dijit, dojox, util, and demos into a single repo including branches and
+tags.
+
+Usage:
+
+	python dojosvn2git.py [<repo dir>]
+
+Examples:
+
+Start fresh, creates new repo named "dojo-toolkit":
+
+	python dojosvn2git.py dojo-toolkit
+
+Create or update an existing repo named "dojo-toolkit" and push to github:
+
+	python dojosvn2git.py dojo-toolkit my-github-account
+
+Use a custom name:
+
+	python dojosvn2git.py my-dojo-repo
+
+Update from within the repo and push to github
+
+	python dojosvn2git.py . my-github-account
+
+Dependencies:
+- python
+- python-svn
+- git
+
+Note:
+
+This tool is written by a Python noob. Don't hate.
+
